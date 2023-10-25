@@ -1,4 +1,6 @@
 <?php
+session_start();
+
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     $username = $_POST['username'];
     $password = $_POST['password'];
@@ -30,8 +32,12 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         $row = $result->fetch_assoc();
         if (password_verify($password, $row['contrasena'])) {
             // Contraseña válida, el usuario está autenticado
+
+            // Almacena el nombre de usuario en la sesión
+            $_SESSION['username'] = $username;
+
             // Puedes redirigir al usuario a su área personal o página de inicio
-            header('Location: hola.html');
+            header('Location: ../dashboard/user_home.php');
             exit;
         } else {
             echo "Contraseña incorrecta";
