@@ -7,6 +7,7 @@
     <title>PlayZone - Descarga tus Videojuegos Favoritos</title>
     <link rel="shortcut icon" href="img/alexcgdesign.png" type="image/x-icon">
     <link rel="stylesheet" href="../css/estilos.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700,800&display=swap" rel="stylesheet">
 </head>
 <body>
@@ -109,41 +110,42 @@ if (isset($_SESSION['username'])) {
 
             </main>
             <footer>
-                <div class="contenedor-footer">
-                    <div class="content-foo">
-                        <h4>Teléfono</h4>
-                        <p>+58 04129244276</p>
-                    </div>
-                    <div class="content-foo">
-                        <h4>Email</h4>
-                        <p>playzone01@gmail.com</p>
-                    </div>
-                    <div class="content-foo">
-                        <h4>Redes Sociales</h4>
-                        <ul>
-                            <li><a href="#">YouTube</a></li>
-                            <li><a href="#">Facebook</a></li>
-                            <li><a href="#">Twitter</a></li>
-                            <li><a href="#">Instagram</a></li>
-                            <li><a href="#">Discord</a></li>
-                        </ul>
-                    </div>
-                    <div class="content-foo">
-                        <h4>Ubicación</h4>
-                        <p>Venezuela</p>
-                    </div>
-                    <div class="content-foo">
-                        <h4>Únete a Nosotros</h4>
-                        <ul>
-                            <li><a href="#">Regístrate</a></li>
-                            <li><a href="#">Condiciones de uso</a></li>
-                            <li><a href="#">Política de privacidad</a></li>
-                        </ul>
-                    </div>
+        <div class="contenedor-footer">
+                <div class="content-foo">
+                    <h4><i class="fa fa-phone"></i> Teléfono</h4>
+                    <p>+58 04129244276</p>
                 </div>
-                
-                <h2 class="titulo-final">&copy; 2023 PlayZone. Todos los derechos reservados.</h2>
-            </footer>
+                <div class="content-foo">
+                    <h4><i class="fa fa-envelope"></i> Email</h4>
+                    <p>playzone01@gmail.com</p>
+                </div>
+                <div class="content-foo">
+                    <h4><i class="fa fa-share-alt"></i> Redes Sociales</h4>
+                    <ul>
+                        <li><a href="#"><i class="fa fa-youtube"></i> YouTube</a></li>
+                        <li><a href="#"><i class="fa fa-facebook"></i> Facebook</a></li>
+                        <li><a href="#"><i class="fa fa-twitter"></i> Twitter</a></li>
+                        <li><a href="#"><i class="fa fa-instagram"></i> Instagram</a></li>
+                        <li><a href="#"><i class="fa fa-discord"></i> Discord</a></li>
+                    </ul>
+                </div>
+                <div class="content-foo">
+                    <h4><i class="fa fa-map-marker"></i> Ubicación</h4>
+                    <p>Venezuela</p>
+                </div>
+                <div class="content-foo">
+                    <h4><i class="fa fa-users"></i> Únete a Nosotros</h4>
+                    <ul>
+                        <li><a href="#"><i class="fa fa-user-plus"></i> Regístrate</a></li>
+                        <li><a href="#"><i class="fa fa-file"></i> Condiciones de uso</a></li>
+                        <li><a href="#"><i class="fa fa-lock"></i> Política de privacidad</a></li>
+                    </ul>
+                </div>
+            </div>            
+        </div>
+        
+        <h2 class="titulo-final">&copy; 2023 PlayZone. Todos los derechos reservados.</h2>
+    </footer>
             
         </body>
         </html>

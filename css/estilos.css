@@ -18,7 +18,7 @@ body {
 }
 
 .titulo {
-    color: #f30909;
+    color: #000000;
     font-size: 30px;
     text-align: center;
     margin-bottom: 60px;
@@ -68,13 +68,13 @@ header .textos-header{
 
 .textos-header h1{
     font-size: 50px;
-    color:#fff;
+    color:#be0404;
 }
 
 .textos-header h2{
     font-size: 30px;
     font-weight: 300;
-    color:#fff;
+    color:#da0404;
 }
 
 .wave{
@@ -158,21 +158,21 @@ footer{
 }
 
 .content-foo h4{
-    color: #fff;
+    color: #ffffff;
     border-bottom: 3px solid #000000;
     padding-bottom: 5px;
     margin-bottom: 10px;
 }
 
 .content-foo p{
-    color: #ccc;
+    color: #ffffff;
 }
 
 .titulo-final{
     text-align: center;
     font-size: 15px;
     margin: 20px 0 0 0;
-    color: #9e9797;
+    color: #ffffff;
 }
 
 @media screen and (max-width:900px){
@@ -314,4 +314,9 @@ footer{
 .info-videojuego p {
     font-size: 14px;
     margin: 5px 0;
+}
+
+a {
+    text-decoration: none;
+    color: #ffffff;
 }
