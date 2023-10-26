@@ -1,6 +1,13 @@
 /* Paleta de colores morados y azules */
 body {
-    background: linear-gradient(to right, #a70606, #62049c); /* Fondo de degradado azul a morado */
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, hsla(0, 100%, 22%, 0.541), hsla(295, 94%, 7%, 0.801)), url(../img/portada.jpg);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, hsla(0, 100%, 22%, 0.541), hsla(295, 94%, 7%, 0.801)), url(../img/portada.jpg);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background-size: cover;
+    background-attachment: fixed;
+    position: relative;
     color: #fff;
     margin: 0;
     padding: 0;
