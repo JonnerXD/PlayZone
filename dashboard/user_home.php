@@ -40,7 +40,7 @@ if (isset($_SESSION['username'])) {
         <section class="contenedor sobre-nosotros">
             <h2 class="titulo">Sobre PlayZone</h2>
             <div class="contenedor-sobre-nosotros">
-                <img src="img/ilutracion1.png" alt="" class="imagen-about-us">
+                <img src="../img/ilutracion1.png" alt="" class="imagen-about-us">
                 <div class="contenido-textos">
                     <h3><span>1</span>Tu fuente de videojuegos</h3>
                     <p>PlayZone es tu plataforma confiable para descubrir, explorar y descargar los videojuegos más emocionantes y populares para todas las plataformas.</p>
@@ -58,7 +58,7 @@ if (isset($_SESSION['username'])) {
                     <h3><span>2</span>Comunidad activa</h3>
                     <p>Únete a una comunidad apasionada de jugadores, comparte tus opiniones y descubre nuevos amigos con una pasión por los videojuegos.</p>
                 </div>
-                <img src="img/ilutracion2.png" alt="" class="imagen-about-us">
+                <img src="../img/ilutracion2.png" alt="" class="imagen-about-us">
             </div>
         </section>
 
@@ -68,7 +68,7 @@ if (isset($_SESSION['username'])) {
                 <div class="galeria-port">
 
                     <div class="videojuego">
-                        <img src="img/img1.avif" alt="">
+                        <img src="../img/img1.avif" alt="">
                         <div class="info-videojuego">
                             <h3>Minecraft</h3>
                             <p>Genero: Aventura</p>
@@ -80,7 +80,7 @@ if (isset($_SESSION['username'])) {
                         </div>
                     </div>
                     <div class="videojuego">
-                        <img src="img/img2.webp" alt="">
+                        <img src="../img/img2.webp" alt="">
                         <div class="info-videojuego">
                             <h3>Grand Theft Auto: San Andreas</h3>
                             <p>Genero:  Videojuego de acción y aventura, Videojuego de disparos en tercera persona, Videojuego no lineal</p>
@@ -93,7 +93,7 @@ if (isset($_SESSION['username'])) {
                         </div>
                     </div>
                     <div class="videojuego">
-                        <img src="img/img3.jpg" alt="">
+                        <img src="../img/img3.jpg" alt="">
                         <div class="info-videojuego">
                             <h3>Warcraft III: The Frozen Throne</h3>
                             <p>Genero: Estrategia en tiempo real</p>
