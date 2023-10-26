@@ -9,6 +9,7 @@ session_start();
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Dashboard - PlayZone</title>
     <link rel="stylesheet" href="../css/dashboard.css">
+    <link rel="shortcut icon" href="../img/ico.png" type="image/x-icon">
 </head>
 <body>
     <nav class="sidebar">

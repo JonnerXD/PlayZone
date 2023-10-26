@@ -10,6 +10,7 @@ session_start();
     <meta http-equiv="X-UA-Compatible" content="ie-edge">
     <title>Detalles del Juego - PlayZone</title>
     <link rel="stylesheet" href="../../css/games.css">
+    <link rel="shortcut icon" href="../../img/ico.png" type="image/x-icon">
 </head>
 <body>
     <nav class="sidebar">
