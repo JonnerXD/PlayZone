@@ -100,6 +100,62 @@ h1 {
     background-color: #7700ff;
 }
 
+/* Estilo para la container de juegos */
+.games-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 20px;
+}
+
+/* Estilo para cada juego */
+.game {
+    width: calc(33.33% - 20px); /* Para mostrar 3 juegos por fila y agregar un espacio entre ellos */
+    background: #111;
+    color: #fff;
+    border: 1px solid #7700ff; /* Borde suave */
+    border-radius: 5px;
+    padding: 20px;
+    margin-bottom: 20px;
+}
+
+/* Estilo para la imagen del juego */
+.game img {
+    max-width: 100%;
+    height: auto;
+    border: 1px solid #7700ff;
+    border-radius: 5px;
+}
+
+/* Estilo para el botón de descarga */
+.download-button {
+    display: inline-block;
+    background: #7700ff;
+    color: #111;
+    text-decoration: none;
+    border: 1px solid #111; /* Borde suave */
+    border-radius: 5px;
+    padding: 10px 20px;
+    margin-top: 10px;
+    transition: background-color 0.3s;
+}
+
+.download-button:hover {
+    background: #4400ff; /* Color de resaltado al pasar el mouse */
+}
+
+/* Estilo para la información del juego */
+.game h2 {
+    font-size: 20px;
+}
+
+.game p {
+    font-size: 16px;
+    margin: 5px 0;
+}
+
+
+
 /* Estilo del pie de página */
 footer {
     background: #11111100;
@@ -107,6 +163,6 @@ footer {
     padding: 5px;
     text-align: center;
     position: relative; /* Cambiamos 'fixed' a 'relative' */
-    width: 100%; /* Ancho completo del viewport */
+    width: 80%; /* Ancho completo del viewport */
     bottom: 0; /* Lo coloca en la parte inferior del contenido */
 }
