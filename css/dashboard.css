@@ -1,0 +1,56 @@
+/* styles.css */
+body {
+    background-color: #222;
+    color: #fff;
+    font-family: 'Press Start 2P', cursive;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #111;
+    padding: 10px;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    text-align: center;
+}
+
+nav li {
+    display: inline;
+    margin: 0 10px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #fff;
+    transition: color 0.3s;
+}
+
+nav a:hover {
+    color: #ffae00; /* Color de resaltado al pasar el mouse */
+}
+
+main {
+    padding: 20px;
+}
+
+h1 {
+    font-size: 36px;
+}
+
+/* Estilo para los botones */
+.button {
+    background-color: #7700ff;
+    color: #111;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.button:hover {
+    background-color: #7700ff; /* Color de resaltado al pasar el mouse */
+}
