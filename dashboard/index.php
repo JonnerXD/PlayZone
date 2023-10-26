@@ -1,7 +1,7 @@
 <?php
 session_start(); // Iniciar la sesión
 
-// Resto de tu código
+
 ?>
 <!DOCTYPE html>
 <html lang="es">
@@ -15,15 +15,14 @@ session_start(); // Iniciar la sesión
 <body>
     <nav class="sidebar">
         <ul>
-            <li><a href="dashboard.php">Inicio</a></li>
+            <li><a href="index.php">Inicio</a></li>
             <li><a href="games.php">Lista de Juegos para Descargar</a></li>
             <li><a href="logout.php">Cerrar Sesión</a></li>
         </ul>
     </nav>
     <main class="content">
         <h1>Bienvenido al Dashboard, <?php echo $_SESSION['username']; ?></h1>
-        <p>Tu fuente de juegos favoritos. Explora y descarga juegos emocionantes para todas las plataformas.</p>
-        <!-- Aquí puedes agregar información adicional o widgets personalizados para el usuario -->
+        <p>Tu fuente de juegos favoritos. Explora y descarga juegos emocionantes.</p>
     </main>
     <footer class="dashboard-footer">
         <p>&copy; 2023 PlayZone. Todos los derechos reservados.</p>

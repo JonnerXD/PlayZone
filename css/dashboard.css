@@ -1,22 +1,36 @@
-/* styles.css */
+/* Paleta de colores morados y azules */
 body {
-    background-color: #222;
+    background: linear-gradient(to right, #a70606, #62049c); /* Fondo de degradado azul a morado */
     color: #fff;
-    font-family: 'Press Start 2P', cursive;
     margin: 0;
     padding: 0;
+}
+
+/* Botones con colores morados y azules */
+.button {
+    background: linear-gradient(to right, #6b0e0e, #3e0f5c);
+    color: #fff;
 }
 
 header {
     background-color: #111;
     padding: 10px;
     text-align: center;
+    z-index: 1; /* Asegura que el encabezado esté en la parte superior */
+    position: fixed; /* Mantiene el encabezado fijo en la parte superior */
+    width: 100%; /* Asegura que el encabezado ocupe todo el ancho */
 }
 
-nav ul {
-    list-style: none;
-    padding: 0;
+/* Establecer un ancho máximo para el menú lateral */
+nav {
+    background-color: #111;
+    width: 250px;
+    padding: 10px;
     text-align: center;
+    height: 100vh;
+    position: fixed;
+    background: linear-gradient(to bottom, #070707, #311144);
+    border-right: 2px solid #fff; /* Borde derecho para el menú lateral */
 }
 
 nav li {
@@ -24,18 +38,49 @@ nav li {
     margin: 0 10px;
 }
 
+/* Alineación vertical y espaciado para los elementos del menú */
+/* Estilo de la barra lateral */
+nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 85%;
+    justify-content: space-between; /* Distribuye los elementos de manera uniforme */
+}
+
 nav a {
     text-decoration: none;
     color: #fff;
     transition: color 0.3s;
+    margin: 10px 0;
+    font-size: 15px;
+}
+
+/* Aplica márgenes personalizados para cada elemento */
+nav a:nth-child(1) {
+    margin-top: 10px; /* Espacio en la parte superior de "Inicio" */
+}
+
+nav a:nth-child(2) {
+    margin-top: 10px; /* Deja "Lista de Juegos para Descargar" centrado verticalmente */
+}
+
+nav a:nth-child(3) {
+    margin-bottom: 10px; /* Espacio en la parte inferior de "Cerrar Sesión" */
 }
 
 nav a:hover {
-    color: #ffae00; /* Color de resaltado al pasar el mouse */
+    color: #4400ff;
 }
+
 
 main {
     padding: 20px;
+    margin-left: 280px;
+    margin-bottom: 20px; /* Agregado espacio inferior para separar del pie de página */
+    min-height: calc(100vh - 80px); /* Ajusta el 80px según la altura de tu footer */
 }
 
 h1 {
@@ -52,5 +97,16 @@ h1 {
 }
 
 .button:hover {
-    background-color: #7700ff; /* Color de resaltado al pasar el mouse */
+    background-color: #7700ff;
+}
+
+/* Estilo del pie de página */
+footer {
+    background: #11111100;
+    color: #fff;
+    padding: 5px;
+    text-align: center;
+    position: fixed; /* Fija el footer en la parte inferior */
+    width: 100%; /* Ancho completo del viewport */
+    bottom: 0; /* Lo coloca en la parte inferior */
 }
