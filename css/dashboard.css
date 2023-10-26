@@ -107,6 +107,6 @@ footer {
     padding: 5px;
     text-align: center;
     position: relative; /* Cambiamos 'fixed' a 'relative' */
-    width: 100%; /* Ancho completo del viewport */
+    width: 80%; /* Ancho completo del viewport */
     bottom: 0; /* Lo coloca en la parte inferior del contenido */
 }
