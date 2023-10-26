@@ -1,10 +1,5 @@
 <?php
 session_start();
-
-if (!isset($_SESSION['user_id'])) {
-    header("Location: ../login/login.php");
-    exit;
-}
 ?>
 
 <!DOCTYPE html>
@@ -32,7 +27,7 @@ if (!isset($_SESSION['user_id'])) {
                 <h2>Minecraft</h2>
                 <p>Genero: Aventura</p>
                 <p>Puntaje (Según Vandal): 9.0</p>
-                <a class="download-button" href="games/">Descargar</a>
+                <a class="download-button" href="games/Minecraft.php">Descargar</a>
             </div>
 
             <div class="game">
@@ -40,7 +35,7 @@ if (!isset($_SESSION['user_id'])) {
                 <h2>Grand Theft Auto: San Andreas</h2>
                 <p>Genero: Videojuego de acción y aventura, Videojuego de disparos en tercera persona, Videojuego no lineal</p>
                 <p>Puntaje (Según Vandal): 9.7</p>
-                <a class="download-button" href="#">Descargar</a>
+                <a class="download-button" href="games/GTA_San_Andreas.php">Descargar</a>
             </div>
 
             <div class="game">

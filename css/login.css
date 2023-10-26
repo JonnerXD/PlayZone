@@ -1,6 +1,13 @@
 body {
     font-family: 'Press Start 2P';
-    background-color: #f0f0f0;
+    /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, hsla(0, 100%, 22%, 0.541), hsla(295, 94%, 7%, 0.801)), url(../img/portada.jpg);
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, hsla(0, 100%, 22%, 0.541), hsla(295, 94%, 7%, 0.801)), url(../img/portada.jpg);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background-size: cover;
+    background-attachment: fixed;
+    position: relative;
     margin: 0;
     padding: 0;
 }
@@ -13,7 +20,7 @@ body {
 }
 
 .form-container {
-    background-color: rgba(255, 255, 255, 0.8); /* Fondo semi-transparente */
+    background-color: rgba(104, 50, 155, 0.486); /* Fondo semi-transparente */
     border-radius: 8px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     padding: 20px;
@@ -23,7 +30,7 @@ body {
 }
 
 h2 {
-    color: #333;
+    color: #ffffff;
     font-size: 24px;
 }
 
@@ -45,7 +52,7 @@ input {
 }
 
 button {
-    background-color: #007BFF;
+    background-color: #2f00ff;
     color: #fff;
     padding: 10px;
     margin-top: 10px;
@@ -69,4 +76,10 @@ h2, label, input, button {
     .form-container {
         width: 90%;
     }
+}
+
+
+a {
+    text-decoration: none;
+    color: #ffffff;
 }

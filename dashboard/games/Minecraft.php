@@ -23,23 +23,23 @@ session_start();
         <h1>Detalles del Juego</h1>
         <div class="game-details">
             <div class="game">
-                <img src="../../img/img3.jpg" alt="Warcraft III: The Frozen Throne">
-                <h2>Warcraft III: The Frozen Throne</h2>
-                <p>Genero: Estrategia en tiempo real</p>
-                <p>Puntaje (Según Vandal): 9.6</p>
-                <p>Peso del Juego: 1.82 GB</p>
-                <a class="download-button" href="files/Warcraft_III.zip">Descargar</a>
+                <img src="../../img/img1.avif" alt="Minecraft">
+                <h2>Minecraft</h2>
+                <p>Genero: Aventura</p>
+                <p>Puntaje (Según Vandal): 9.0</p>
+                <p>Peso del Juego: 1.2 GB</p>
+                <a class="download-button" href="files/Minecraft.zip">Descargar</a>
             </div>
             <div class="game-description">
                 <h2>Descripción del Juego</h2>
-                <p>Warcraft: The Frozen Throne es un videojuego de estrategia en tiempo real y expansión de Warcraft III: Reign of Chaos desarrollado por Blizzard Entertainment.</p>
-                <p>La instalación de Warcraft III: Reign of Chaos es necesaria para poder jugar a esta expansión.</p>
+                <p>Minecraft es un videojuego tipo sandbox, Los jugadores pueden modelar el mundo a su gusto, destruir y construir, como si estuviesen jugando en una caja de arena.</p>
+                <p>Creado originalmente por el sueco Markus Persson (conocido comúnmente como «Notch»), que creo posteriormente Mojang Studios (actualmente parte de Microsoft)</p>
             </div>
             <div class="game-screenshots">
                 <h2>Capturas de Pantalla</h2>
-                <img src="../../img/cap7.jpg" alt="Captura de pantalla 1">
-                <img src="../../img/cap8.jpg" alt="Captura de pantalla 2">
-                <img src="../../img/cap9.avif" alt="Captura de pantalla 3">
+                <img src="../../img/cap1.jpg" alt="Captura de pantalla 1">
+                <img src="../../img/cap2.avif" alt="Captura de pantalla 2">
+                <img src="../../img/cap3.webp" alt="Captura de pantalla 3">
             </div>
         </div>
     </main>
