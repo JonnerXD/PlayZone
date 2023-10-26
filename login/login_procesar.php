@@ -40,11 +40,14 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
             header('Location: ../dashboard/user_home.php');
             exit;
         } else {
-            echo "Contraseña incorrecta";
+            echo "Contraseña incorrecta<br><br><br>";
+            echo '<a href="login.php">Iniciar Sesión</a>';
         }
     } else {
-        echo "Usuario no encontrado";
+        echo "Usuario no encontrado<br><br><br>";
+        echo '<a href="login.php">Volver a Intentar</a>';
     }
+    
 
     // Cerrar la conexión y liberar recursos
     $stmt->close();

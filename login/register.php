@@ -10,7 +10,7 @@
     <div class="container">
         <div class="form-container">
             <h2>Registrarse</h2>
-            <form id="register-form" action="register.php" method="post">
+            <form id="register-form" action="register_procesar.php" method="post">
                 <label for="new-username">Nombre de Usuario</label>
                 <input type="text" id="new-username" name="new-username" required>
                 <label for="email">Correo Electrónico</label>
@@ -20,7 +20,7 @@
                 <label for="country">País</label>
                 <input type="text" id="country" name="country" required>
                 <button type="submit">Registrarse</button>
-                <p>¿Ya tienes una cuenta? <a href="login.html">Inicia sesión aquí</a></p>
+                <p>¿Ya tienes una cuenta? <a href="login.php">Inicia sesión aquí</a></p>
             </form>
         </div>
     </div>

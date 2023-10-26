@@ -27,11 +27,12 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     // Ejecutar la consulta
     if ($stmt->execute()) {
         // Registro exitoso, puedes redirigir al usuario a otra página, por ejemplo, la página de inicio de sesión.
-        header('Location: login.html');
+        header('Location: login.php');
         exit;
     } else {
         // Error en la consulta
-        echo "Error al registrar el usuario: " . $stmt->error;
+        echo "Error al registrar el usuario: <br><br><br>" . $stmt->error;
+        echo '<a href="register.php">Volver a Intertar</a>';
     }
 
     // Cerrar la conexión y liberar recursos
