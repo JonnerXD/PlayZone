@@ -1,53 +1,24 @@
-<?php
-session_start();
-
-if ($_SERVER['REQUEST_METHOD'] === 'POST') {
-    $username = $_POST['username'];
-    $password = $_POST['password'];
-
-    // Conexión a la base de datos (debes configurar las credenciales de tu base de datos)
-    $mysqli = new mysqli('localhost', 'root', '', 'playzone');
-
-    if ($mysqli->connect_error) {
-        die("Error en la conexión a la base de datos: " . $mysqli->connect_error);
-    }
-
-    // Consulta SQL para buscar el usuario por nombre de usuario
-    $sql = "SELECT * FROM usuarios WHERE nombre_usuario = ?";
-
-    // Preparar la consulta
-    $stmt = $mysqli->prepare($sql);
-
-    // Vincular el parámetro
-    $stmt->bind_param("s", $username);
-
-    // Ejecutar la consulta
-    $stmt->execute();
-
-    // Obtener el resultado de la consulta
-    $result = $stmt->get_result();
-
-    if ($result->num_rows === 1) {
-        // El usuario existe, verificar la contraseña
-        $row = $result->fetch_assoc();
-        if (password_verify($password, $row['contrasena'])) {
-            // Contraseña válida, el usuario está autenticado
-
-            // Almacena el nombre de usuario en la sesión
-            $_SESSION['username'] = $username;
-
-            // Puedes redirigir al usuario a su área personal o página de inicio
-            header('Location: ../dashboard/user_home.php');
-            exit;
-        } else {
-            echo "Contraseña incorrecta";
-        }
-    } else {
-        echo "Usuario no encontrado";
-    }
-
-    // Cerrar la conexión y liberar recursos
-    $stmt->close();
-    $mysqli->close();
-}
-?>
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Iniciar Sesión - PlayZone</title>
+    <link rel="stylesheet" type="text/css" href="../css/login.css">
+</head>
+<body>
+    <div class="container">
+        <div class="form-container">
+            <h2>Iniciar Sesión</h2>
+            <form id="login-form" action="login.php" method="post">
+                <label for="username">Nombre de Usuario</label>
+                <input type="text" id="username" name="username" required>
+                <label for="password">Contraseña</label>
+                <input type="password" id="password" name="password" required>
+                <button type="submit">Iniciar Sesión</button>
+                <p>¿No tienes una cuenta? <a href="register.html">Regístrate aquí</a></p>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
